@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Inventory Management System</h1>
+        <p class="subtitle">Basic Inventory Module</p>
+
+        <div class="card">
+            <h2>Add Product</h2>
+            <form id="productForm">
+                <input type="number" id="productId" placeholder="Product ID" required>
+                <input type="text" id="productName" placeholder="Product Name" required>
+                <input type="number" id="productPrice" placeholder="Price" min="0" required>
+                <input type="number" id="productQuantity" placeholder="Quantity" min="0" required>
+                <button type="submit">Add Product</button>
+            </form>
+            <p id="message"></p>
+        </div>
+
+        <div class="card">
+            <h2>Inventory</h2>
+            <input type="text" id="searchInput" placeholder="Search by ID or product name">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Stock Value</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="inventoryTable"></tbody>
+            </table>
+
+            <h3 id="totalValue">Total Stock Value: ₹0</h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
