@@ -1,5 +1,5 @@
 let products = [
-    { id: 101, name: "Notebook", price: 50, quantity: 20 },
+    { id: 101, name: "book", price: 50, quantity: 20 },
     { id: 102, name: "Keyboard", price: 700, quantity: 10 }
 ];
 
